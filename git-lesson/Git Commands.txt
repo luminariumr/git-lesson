@@ -1,0 +1,104 @@
+
+GIT STAGING FLOW:
+
+MODIFIED > ADD > COMMIT
+
+GIT COMMANDS:
+
+cd ..- goes back directory
+
+cd (name) - goes inside the directory
+
+mkdir - make a new directory
+
+ls - list of all inside the directory
+
+touch - make a file
+
+git init - initialize git inside the folder / makes a new repository inside the folder
+
+git config user.name '(enter username)' - changes the computers username
+
+git config user.email (enter email) - changes the computers email
+
+git clone - clones a repository from an existing url
+
+git add [file] - adds the file to the staging area
+
+git add [file] [file] - adds 2 or more files to the staging area
+
+git add . -- add all files to the staging area
+
+git checkout -- 
+
+git commit -m "[type in commit msg]" - records the file permanently in the version history
+
+git commit -a -commits any files you've added with the git add com/ commits any file
+		you have changed since then
+
+git diff - shows the file differences which are not yet staged
+
+git diff -staged - shows the difference b/w the files in the staging area and the latest
+			version present
+
+git diff [first branch][second branch] - show the difference of the 2 branches mentioned
+
+git reset [file] - unstages the file, but preserves the file content
+
+git reset [commit] - undoes all the commits after the specified commit and preserves the
+			changes locally
+
+git reset -hard [commit] - discards all history and goes back to the specified commit
+
+git status - list all files to be commited
+
+git rm [file] - deletes file from working directory and stages the deletion
+
+git log - used to list the version history of the current branch
+
+git log -follow[file] - lists version history of a file, including the renaming of file
+
+git log --oneline - shortens the unique ID of a commit
+
+git show [commit] - shows the content of the commit
+
+git tag [commitID] - used to give tags to the commit
+
+git branch - lists all local branch in the current repository 
+
+git branch [branch name] - create new branch
+
+git branch master - reverts back to the master branch
+
+git branch -d [branch name] - delete named branch
+
+git branch -a - lists all of branch
+
+git checkout - used to switch from one branch to another
+
+git checkout -b [branch name] - creates new branch / also switches
+
+git merge - merges specified branch's history into the current branch
+
+git revert - revises a commit and creates a new one
+
+git revert master - revises the master commit and creates a new commit master
+
+git remote - use to connect your local repository to the remote server (ex. Github)
+
+git push - sends the commited changes of master branch to your remote repository
+
+git push [variable name] [branch] - sends the branch commits to your remote repository
+
+git push -all - pushes all branches to your remote repository
+
+git reset [commit id]- makes a specified branch to its master and losing the other commits after it
+
+git reset --hard - also specifies a branch as its master and losing all other commits 
+			after it and also in its working directory
+
+git reset --mixed - also specifies a branch as its master and losing all other commits 
+			after it and also in its staged directory
+
+git reset --soft - also specifies a branch as its master and losing all other commits 
+			after it and also in its commit history
